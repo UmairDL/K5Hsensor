@@ -5,8 +5,8 @@ import plotly.express as px
 import time
 
 # Supabase credentials
-API_URL = 'https://kdnlfglfimixnpedfast.supabase.co'
-API_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtkbmxmZ2xmaW1peG5wZWRmYXN0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mjc3NTc3MDgsImV4cCI6MjA0MzMzMzcwOH0.qHY6b49dWMecHxc8_PBHgW0CxUrH9aoAgdgKTshAbbM'
+API_URL = st.secrets["URL_SUPA"]
+API_KEY = st.secrets["API_SUPA"]
 
 # Create Supabase client
 supabase: Client = create_client(API_URL, API_KEY)
